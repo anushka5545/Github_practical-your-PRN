@@ -7,103 +7,71 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #eef2f7;
-}
-
-header {
-    background: #243b55;
-    color: white;
-    text-align: center;
-    padding: 25px;
-}
-
-header h1 {
-    margin-bottom: 10px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 30px auto;
     background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px #ccc;
+    width: 90%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
-h2 {
-    color: #243b55;
-    margin: 20px 0;
+h1 {
+    color: #333;
+    margin-bottom: 10px;
 }
 
-form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+.subtitle {
+    color: #777;
+    margin-bottom: 25px;
 }
 
-input {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.form-box input {
     width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
 button {
-    background: #243b55;
-    color: white;
+    width: 100%;
     padding: 12px;
+    margin-top: 15px;
+    background: #667eea;
+    color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 button:hover {
-    background: #141e30;
+    background: #764ba2;
 }
 
-form button {
-    grid-column: span 2;
+.result {
+    display: none;
+    margin-top: 25px;
+    padding: 15px;
+    background: #f0f0ff;
+    border-radius: 10px;
 }
 
-#search {
-    margin-bottom: 20px;
+.result h2 {
+    color: #667eea;
+    margin-bottom: 12px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: center;
-}
-
-th {
-    background: #243b55;
-    color: white;
-}
-
-.delete-btn {
-    background: #e53935;
-}
-
-@media (max-width: 600px) {
-    form {
-        grid-template-columns: 1fr;
-    }
-
-    form button {
-        grid-column: span 1;
-    }
-
-    .container {
-        overflow-x: auto;
-    }
-
-    table {
-        min-width: 650px;
-    }
+.result p {
+    margin: 8px;
+    color: #333;
 }
