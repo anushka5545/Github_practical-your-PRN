@@ -4,55 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Management System</title>
+    <title>GitHub Practical</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Student Management System</h1>
-        <p>Manage Student Records Easily</p>
-    </header>
-
     <div class="container">
+        <h1>Student Information System</h1>
+        <p class="subtitle">GitHub Practical Project</p>
 
-        <h2>Add New Student</h2>
+        <div class="form-box">
+            <input type="text" id="name" placeholder="Enter Your Name">
+            <input type="text" id="prn" placeholder="Enter Your PRN">
+            <input type="text" id="branch" placeholder="Enter Your Branch">
 
-        <form id="studentForm">
-            <input type="text" id="name"
-                placeholder="Student Name" required>
+            <button onclick="displayDetails()">Submit</button>
+        </div>
 
-            <input type="text" id="prn"
-                placeholder="PRN Number" required>
-
-            <input type="email" id="email"
-                placeholder="Email Address" required>
-
-            <input type="text" id="course"
-                placeholder="Course Name" required>
-
-            <button type="submit">Add Student</button>
-        </form>
-
-        <h2>Student Records</h2>
-
-        <input type="text" id="search"
-            placeholder="Search by name or PRN">
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>PRN</th>
-                    <th>Email</th>
-                    <th>Course</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-
-            <tbody id="studentList"></tbody>
-        </table>
-
+        <div id="result" class="result">
+            <h2>Student Details</h2>
+            <p id="studentName"></p>
+            <p id="studentPRN"></p>
+            <p id="studentBranch"></p>
+        </div>
     </div>
 
     <script src="script.js"></script>
